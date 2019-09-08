@@ -17,10 +17,15 @@ $googleauth = new GoogleSecondarySuthentication();
     
 return $googleauth->getSecretKey();
 ```
+OR
+```php
+use GoogleAuth;
+return GoogleAuth::getSecretKey();
+```
 ## 参考
 ```php
-pragmarx/google2fa
-pragmarx/google2fa-laravel
+[pragmarx/google2fa](https://github.com/antonioribeiro/google2fa)
+[pragmarx/google2fa-laravel](https://github.com/antonioribeiro/google2fa-laravel)
 ```
 
 # License

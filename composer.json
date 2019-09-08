@@ -1,6 +1,6 @@
 {
     "name": "jybtx/google-auth",
-    "description": "A test kit",
+    "description": "A test kit,This is a small project modeled after google auth",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -11,13 +11,25 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "php": ">=7.0",
-        "pragmarx/google2fa": "^5.0",
-        "pragmarx/google2fa-laravel": "^1.1"
+        "php": ">=7.0.0",
+        "pragmarx/google2fa-laravel": "^1.0.1",
+        "pragmarx/google2fa-qrcode": "^1.0",
+        "bacon/bacon-qr-code": "^2.0"
     },
     "autoload": {
         "psr-4": {
             "Jybtx\\GoogleAuth\\": "src/"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jybtx\\GoogAuth\\Providers\\GoogleServiceProvider"
+            ],
+            "aliases": {
+                "GoogleAuth": "Jybtx\\GoogAuth\\Faceds\\GoogleAuthFaced"
+            }
+        }
     }
 }
+
