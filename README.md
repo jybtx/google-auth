@@ -15,5 +15,5 @@ use Jybtx\GoogleAuth\GoogleSecondarySuthentication;
     
 $googleauth = new GoogleSecondarySuthentication();
     
-return $google2fa->getSecretKey();
+return $googleauth->getSecretKey();
 ```
