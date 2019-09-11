@@ -1,0 +1,23 @@
+{
+    "name": "jybtx/google-auth",
+    "description": "A test kit",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "jybtx",
+            "email": "2574034626@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.0",
+        "pragmarx/google2fa": "^5.0",
+        "pragmarx/google2fa-laravel": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jybtx\\GoogleAuth\\": "src/"
+        }
+    }
+}
