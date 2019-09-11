@@ -17,5 +17,5 @@ $googleauth = new GoogleSecondarySuthentication();
     
 return $googleauth->getSecretKey();
 ```
-## License
+# License
 MIT
