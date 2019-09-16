@@ -24,10 +24,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Jybtx\\GoogAuth\\Providers\\GoogleServiceProvider"
+                "Jybtx\\GoogleAuth\\Providers\\GoogleServiceProvider"
             ],
             "aliases": {
-                "GoogleAuth": "Jybtx\\GoogAuth\\Faceds\\GoogleAuthFaced"
+                "GoogleAuth": "Jybtx\\GoogleAuth\\Faceds\\GoogleAuthFaced"
             }
         }
     }

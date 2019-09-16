@@ -1,5 +1,5 @@
 <?php
-namespace Jybtx\GoogAuth\Faceds;
+namespace Jybtx\GoogleAuth\Faceds;
 
 use Illuminate\Support\Facades\Facade;
 

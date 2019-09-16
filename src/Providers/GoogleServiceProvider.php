@@ -1,10 +1,8 @@
 <?php
-
-namespace Jybtx\GoogAuth\Providers;
+namespace Jybtx\GoogleAuth\Providers;
 
 use Illuminate\Support\ServiceProvider;
-
-use Jybtx\GoogAuth\GoogAuth\GoogleTwoFa;
+use Jybtx\GoogleAuth\GoogleSecondarySuthentication;
 
 class GoogleServiceProvider extends ServiceProvider
 {
@@ -13,12 +11,10 @@ class GoogleServiceProvider extends ServiceProvider
     {
         //
     }
-
     public function register()
     {
         $this->app->singleton('GoogAuth', function () {
-            return new GoogleTwoFa;
+            return new GoogleSecondarySuthentication;
         });
     }
-
 }
