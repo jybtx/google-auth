@@ -11,14 +11,6 @@
 ### Instantiate it directly
 
 ```php
-use Jybtx\GoogleAuth\GoogleSecondarySuthentication;
-    
-$googleauth = new GoogleSecondarySuthentication();
-    
-return $googleauth->getSecretKey();
-```
-OR
-```php
 use GoogleAuth;
 return GoogleAuth::getSecretKey();
 ```
@@ -30,8 +22,8 @@ return	GoogleAuth::getQRCodeGoogleUrl($company, $holder, $secret, $size = 200);
 ### 验证一次性密码是否正确
 ```php
 return GoogleAuth::validateSecretKey($secretKey,$one_time_password);
-	ture 验证正确, <br />
-	false 验证错误
+		ture 验证正确
+		false 验证错误
 ```
 ## 参考
 
