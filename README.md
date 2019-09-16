@@ -17,7 +17,7 @@ return GoogleAuth::getSecretKey();
 
 ### 请求google并生成二维码
 ```php
-return	GoogleAuth::getQRCodeGoogleUrl($company, $holder, $secret, $size = 200);
+return	GoogleAuth::getQRCodeGoogleUrl($company, $user_name, $secret, $size = 200);
 ```
 ### 验证一次性密码是否正确
 ```php
