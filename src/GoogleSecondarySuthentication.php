@@ -45,6 +45,33 @@ class GoogleSecondarySuthentication
         
     }
     /**
+     * 本地生成二维码
+     * @author jybtx
+     * @date   2019-10-03
+     * @param  [type]     $company [description]
+     * @param  [type]     $holder  [description]
+     * @param  [type]     $secret  [description]
+     * @return [type]              [description]
+     */
+    public function getQRCodeForLocalUrl($company, $holder, $secret)
+    {
+        return 'otpauth://totp/' .
+            rawurlencode($company) .
+            ':' .
+            rawurlencode($holder) .
+            '?secret=' .
+            $secret .
+            '&issuer=' .
+            rawurlencode($company) .
+            '&algorithm=' .
+            rawurlencode(strtoupper($this->algorithm)) .
+            '&digits=' .
+            rawurlencode(strtoupper($this->oneTimePasswordLength)) .
+            '&period=' .
+            rawurlencode(strtoupper($this->keyRegeneration)) .
+            '';
+    }
+    /**
      * google二次密码验证
      * @param  [type] $secretKey         [description]
      * @param  [type] $one_time_password [description]
